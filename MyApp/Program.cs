@@ -24,10 +24,10 @@ public class Program
 
     static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
-            .ConfigureServices((hostContext, services) =>
+            .ConfigureServices((context, services) =>
             {
                 services.AddSingleton<IMessageService>(new ServiceBusMqServer(
-                    hostContext.Configuration.GetConnectionString("ServiceBus")) {
+                    context.Configuration.GetConnectionString("ServiceBus")) {
                     DisablePublishingToOutq = true,
                 });
                 services.AddHostedService<MqWorker>();

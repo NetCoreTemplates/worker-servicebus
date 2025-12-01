@@ -1,16 +1,13 @@
 # worker-servicebus
 
-.NET 6.0 [Azure Service Bus MQ](https://docs.servicestack.net/azure-service-bus-mq) Worker Service
+.NET 10.0 [Azure Service Bus MQ](https://docs.servicestack.net/azure-service-bus-mq) Worker Service
 
-> Browse [source code](https://github.com/NetCoreTemplates/worker-servicebus) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/NetCoreTemplates/worker-servicebus):
 
-    $ dotnet tool install -g x
+```bash
+npx create-net worker-servicebus ProjectName
+```
 
-    $ x new worker-servicebus ProjectName
+## Jumpstart with Copilot
 
-Alternatively write new project files directly into an empty repository, using the Directory Name as the ProjectName:
-
-    $ git clone https://github.com/<User>/<ProjectName>.git
-    $ cd <ProjectName>
-    $ x new worker-servicebus
-
+Instantly [scaffold a new App with this template](https://github.com/new?template_name=worker-servicebus&template_owner=NetCoreTemplates) using GitHub Copilot, just describe the features you want and watch Copilot build it!
